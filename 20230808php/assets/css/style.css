@@ -1,0 +1,31 @@
+/* header */
+.header-logo {
+    width: 200px;
+}
+
+/* hooter */
+.hooter-logo {
+    width: 200px;
+    margin: 0 auto;
+}
+
+/* index_page */
+.text_bold {
+    font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+    .project_bottom {
+     padding-bottom: 48px;
+    }
+    }
+
+/* confirm_page */
+@media screen and (max-width: 480px) {
+.btn-bottom {
+ margin-bottom: 10px;
+}
+}
+/* thanks_page */
+.thanks_text {
+ text-align: center;
+}
