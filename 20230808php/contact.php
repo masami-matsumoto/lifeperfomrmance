@@ -91,6 +91,8 @@ include 'inc/head.php'; // head.php の読み込み
               </div>
             </div>
             <div class="col-sm-12 text-center pt-4">
+            <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+
               <button class="btn btn-lg btn-light" type="submit">内容を確認する</button>
             </div>
           </div>
@@ -116,5 +118,29 @@ include 'inc/footer.php'; // footer.php の読み込み
 <script src="assets/vendor/img-comparison-slider/dist/index.js"></script> 
 <!-- Main theme script--> 
 <script src="assets/js/theme.min.js"></script>
+<!-- reCAPTCHA V3 -->
+<!-- <script>
+function onClick(e) {
+  e.preventDefault();
+  grecaptcha.enterprise.ready(async () => {
+    const token = await grecaptcha.enterprise.execute('6LeTfTkoAAAAAPtJaY0Xj281FNwy09Bx4Rha9k_a', {action: 'LOGIN'});
+    // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
+    // reCAPTCHA Enterprise to the end user's browser.
+    // This token must be validated by creating an assessment.
+    // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
+  });
+}
+</script> -->
+<script src="https://www.google.com/recaptcha/api.js?render=6LdS4zkoAAAAAEuZxUFYDjye32D6qTVEL8muKZqh"></script>
+<script>
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6LdS4zkoAAAAAEuZxUFYDjye32D6qTVEL8muKZqh', {action: 'submit'}).then(function(token) {
+              // Add your logic to submit to your backend server here.
+          });
+        });
+      }
+  </script>
 </body>
 </html>

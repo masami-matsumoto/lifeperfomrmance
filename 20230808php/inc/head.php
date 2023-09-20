@@ -301,4 +301,6 @@ transform: none;
 
   gtag('config', 'G-X82F552SSH');
 </script>
+<!-- reCAPTCHA V3 -->
+<!-- <script src="https://www.google.com/recaptcha/enterprise.js?render=6LeTfTkoAAAAAPtJaY0Xj281FNwy09Bx4Rha9k_a"></script> -->
 </head>

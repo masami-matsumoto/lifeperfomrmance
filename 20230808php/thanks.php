@@ -1,4 +1,22 @@
 <?php
+ $secretKey =  '6LdS4zkoAAAAADv5dQtdbSsz6OdrL9dPMekDzTWj';
+ $captchaResponse = $_POST['g-recaptcha-response'];
+ 
+ // APIリクエスト
+ $verifyResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secretKey}&response={$captchaResponse}");
+ 
+ // APIレスポンス確認
+ $responseData = json_decode($verifyResponse);
+ if ($responseData->success) {
+  // echo '<h1 class="text-center"><span class="no_wrap">ありがとうございました。</span></h1>'; // 成功（ロボットではない）
+   if (mail($to,"題名をこちらへ入力", $message, $headers)) {
+      echo '<h1 class="text-center"><span class="no_wrap">ありがとうございました。</span></h1>';
+   }
+ } else {
+  echo '<h1 class="text-center">Sorry unexpected error occurred, please try again later.</h1>'; // 失敗
+ }
+?>
+<?php
 $title = 'Lifeperformance | お問い合わせ';
 $description = '東京 | Web制作会社ライフパフォーマンス | お気軽にお問い合わせください。';
 include 'inc/head.php'; // head.php の読み込み

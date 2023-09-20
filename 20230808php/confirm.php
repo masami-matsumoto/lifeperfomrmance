@@ -177,8 +177,8 @@ EOM;
 		// メール送信を行う
 		mb_send_mail($fromEmail, $subject, $body, $header);
  		// サンクスページに画面遷移させる
-		header("Location: https://lifeperformance.jp/thanks.php");
-		exit;
+     header("Location: https://lifeperformance.jp/thanks.php");
+     exit;
 	}
 ?>
 <?php
@@ -289,6 +289,7 @@ include 'inc/head.php'; // head.php の読み込み
            </div>
             <div class="col-sm-12 text-center pt-4">
               <input type="button" value="内容を修正する" onclick="history.back(-1)" class="btn btn-lg btn-light btn-bottom">
+              <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
               <?php if(empty($err_msg)){ ?>
                 <?php echo '<button type="submit" name="submit" class="btn btn-lg btn-light" type="submit">送信する</button>'; ?>
             </div> <?php } ?>
@@ -315,5 +316,17 @@ include 'inc/footer.php'; // footer.php の読み込み
 <script src="assets/vendor/img-comparison-slider/dist/index.js"></script> 
 <!-- Main theme script--> 
 <script src="assets/js/theme.min.js"></script>
+<!-- reCAPTCHA V3 -->
+<script src="https://www.google.com/recaptcha/api.js?render=6LdS4zkoAAAAAEuZxUFYDjye32D6qTVEL8muKZqh"></script>
+<script>
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6LdS4zkoAAAAAEuZxUFYDjye32D6qTVEL8muKZqh', {action: 'submit'}).then(function(token) {
+              // Add your logic to submit to your backend server here.
+          });
+        });
+      }
+  </script>
 </body>
 </html>
