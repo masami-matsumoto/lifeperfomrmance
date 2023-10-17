@@ -40,8 +40,8 @@
                   $phone = trim(mb_convert_kana($_POST['phone'], 's', 'UTF-8'));
 		if(mb_strlen($phone)===0){
         $err_msg[] = '電話番号を入力してください';
-    } else if (preg_match('/\A[0-9]{2,4}[0-9]{2,4}[0-9]{3,4}\z/',$phone)!==1){
-         $err_msg[] = '電話番号の形式が正しくありません（ハイフンを入れておりませんか？）';
+    } else if (preg_match('/\A[0-9]{2,4}-[0-9]{2,4}-[0-9]{3,4}\z/',$phone)!==1){
+         $err_msg[] = '電話番号の形式が正しくありません（ハイフンを忘れておりませんか？）';
     }
     else {
         $msg[] = '登録完了TEL';

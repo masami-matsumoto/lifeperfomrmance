@@ -52,8 +52,9 @@ include 'inc/head.php'; // head.php の読み込み
         <form class="mx-auto" action="confirm.php" method="post" name="form" onsubmit="return validate()" style="max-width: 800px;">
           <h2 class="h1 card-title text-center pb-4">Please fill out the form below.</h2>
           <div class="row g-4">
+            <p><span style = "color : #EDCB50">* 必須項目 / Required</span></p>
             <div class="col-sm-6">
-              <label class="form-label fs-base" for="name">Name</label>
+              <label class="form-label fs-base" for="name">Name<span style = "color : #EDCB50">*</span></label>
               <input class="form-control form-control-lg" type="text" name="name" placeholder="Your name" required id="name">
             </div>
             <div class="col-sm-6">
@@ -61,15 +62,15 @@ include 'inc/head.php'; // head.php の読み込み
               <input class="form-control form-control-lg" type="text" name="company" placeholder="Your company name" id="company">
             </div>
             <div class="col-sm-6">
-              <label class="form-label fs-base" for="email">Email</label>
+              <label class="form-label fs-base" for="email">Email<span style = "color : #EDCB50">*</span></label>
               <input class="form-control form-control-lg" type="email" name="email" placeholder="Email address" required id="email">
             </div>
             <div class="col-sm-6">
-              <label class="form-label fs-base" for="phone">Phone</label>
-              <input class="form-control form-control-lg" type="text" name="phone" placeholder="Phone number ハイフン無し" id="phone">
+              <label class="form-label fs-base" for="phone">Phone<span style = "color : #EDCB50">*</span></label>
+              <input class="form-control form-control-lg" type="text" name="phone" placeholder="Phone number ハイフン有り:03-1234-4567" id="phone">
             </div>
             <div class="col-sm-12">
-              <label class="form-label fs-base" for="message">How can we help?</label>
+              <label class="form-label fs-base" for="message">How can we help?<span style = "color : #EDCB50">*</span></label>
               <textarea class="form-control form-control-lg" rows="6" name="message" placeholder="Enter your message here..." required id="message"></textarea>
             </div>
             <div class="col-sm-12">
