@@ -69,7 +69,7 @@ include 'inc/head.php'; // head.php の読み込み
         <dt class="h4 mb-lg-4 pt-3 pt-md-4 pt-xl-5">会員</dt>
         <dd class="fs-lg">フリーランス協会</dd>
         <dt class="h4 mb-lg-4 pt-3 pt-md-4 pt-xl-5">パートナー</dt>
-        <dd class="fs-lg">GMO MakeShop  IT導入補助金支援事業者</dd>
+        <dd class="fs-lg">GMO MakeShop  Shopify partners</dd>
       </dl>
     </div>
   </section>

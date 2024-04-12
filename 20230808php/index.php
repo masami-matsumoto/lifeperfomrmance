@@ -111,10 +111,8 @@ include 'inc/head.php'; // head.php の読み込み
       <!-- Sidebar -->
       <div class="col-md-5 col-xl-4 offset-xl-1" style="margin-top: -115px;">
         <div class="position-sticky top-0 ps-md-4 ps-xl-0" style="padding-top: 125px;">
-          <h3 class="h4">ウェブサイトの性能はオンラインビジネスの成功に不可欠な要素となっています。</h3>
-          <p>ウェブサイトの速度、安定性、使いやすさは、ユーザーエクスペリ
-            エンスを向上させ、検索エンジンの評価にも影響を与える重要
-            な要素です。</p>
+          <h3 class="h4">ウェブサイトには見た目を良くする以外にもユーザビリティという大切な役割がありオンラインビジネスの成功に不可欠な要素となっています。</h3>
+          <p>弊社の実績ではウェブサイト制作や商品ブランディング・販売支援・運営・保守まで幅広く対応させていただいております。</p>
           <a class="d-inline-flex align-items-center fw-semibold text-decoration-none" href="works.php">詳しくはこちら<i class="ai-arrow-right fs-4 ms-2"></i></a> </div>
       </div>
     </div>
@@ -125,8 +123,15 @@ include 'inc/head.php'; // head.php の読み込み
     <!-- Post-->
     <div class="col-sm-7 col-lg-8">
       <div class="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
-        <h3><a href="">コーポレートサイトをリニューアルしました。</a></h3>
-        <div class="d-flex flex-wrap align-items-center mt-n2"><span class="fs-sm text-muted mt-2">2023.8.7</span></div>
+        <h3><a href="https://lifeperformance.jp/works.php">制作実績を更新いたしました。</a></h3>
+        <div class="d-flex flex-wrap align-items-center mt-n2"><span class="fs-sm text-muted mt-2">2024.3.10</span></div>
+      </div>
+    </div>
+    <!-- Post-->
+    <div class="col-sm-7 col-lg-8">
+      <div class="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
+        <h3><a href="https://www.shopify.com/jp/partners">Shopify パートナープログラムに参加いたしました。</a></h3>
+        <div class="d-flex flex-wrap align-items-center mt-n2"><span class="fs-sm text-muted mt-2">2024.2.21</span></div>
       </div>
     </div>
     <!-- Post-->
