@@ -7,6 +7,7 @@
         <li class="nav-item"><a class="nav-link py-2 px-3 mx-1" href="<?php echo $path; ?>about.php">About</a></li>
         <li class="nav-item"><a class="nav-link py-2 px-3 mx-1" href="<?php echo $path; ?>project.php">Project</a></li>
         <li class="nav-item"><a class="nav-link py-2 px-3 mx-1" href="<?php echo $path; ?>works.php">Works</a></li>
+        <li class="nav-item"><a class="nav-link py-2 px-3 mx-1" href="<?php echo $path; ?>artists.php">Artists</a></li>
       </ul>
     </div>
     <div class="d-sm-flex align-items-center justify-content-between pt-4 mt-2 mt-sm-0">

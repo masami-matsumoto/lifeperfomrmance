@@ -29,3 +29,133 @@
 .thanks_text {
  text-align: center;
 }
+
+/* 20240724追加 */
+
+/* 「・」が行の先頭に来るようにする */
+.custom-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.custom-list li {
+    position: relative;
+    padding-left: 1.5em;
+    /* text-indent: -1.5em; */
+}
+.custom-list li::before {
+    content: "・";
+    position: absolute;
+    left: 0;
+}
+
+/* 背景グラデーション */
+.background_gradient {
+    background: linear-gradient(90deg, rgba(251, 213, 251, 1), rgba(149, 233, 243, 1));
+}
+.project_bottom {
+    padding-bottom: 48px;
+}
+
+.marker {
+    background: linear-gradient(90deg, rgba(251, 213, 251, 1) , rgba(149, 233, 243, 1) );
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 95% 50%;
+}
+
+/* 画像回り込ませる */
+.float-image {
+    float: left; /* 画像を左に浮かせる */
+    margin: 0 20px 20px 0; /* 画像とテキストの間に余白を設定 */
+}
+
+.float-image img {
+    max-width: 100%; /* 画像の最大幅を親要素に合わせる */
+    height: auto; /* 画像の高さを自動調整 */
+}
+
+/* センター配置 */
+
+@media screen and (max-width: 768px) {
+    .mobile-center {
+        text-align: left; /* 画面幅が768px以下の場合にセンター揃え */
+    }
+}
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc-break { display: block !important; }
+.sp-break { display: none !important; }
+ 
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+    .pc-break { display: none !important; }
+    .sp-break { display: block !important; }
+}
+
+/* br デフォルトでは非表示 */
+.mobile-break {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-break {
+        display: inline;
+    }
+}
+/* about 画像向け */
+    .content-container-lpimg {
+        overflow: hidden;
+    }
+    
+    .fs-lg {
+        margin: 0 0 20px 0;
+    }
+    
+    .right-image {
+        float: right;
+        max-width: 200px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .eclogo-image {
+        max-width: 50%;
+    }
+    
+    /* スマホ表示のためのメディアクエリ */
+    @media (max-width: 767px) {
+        .right-image {
+            float: none;
+            display: block;
+            margin: 0 auto 20px auto; /* 上下にスペースを追加 */
+        }
+        .eclogo-image {
+            max-width: 80%;
+        }
+    
+        
+    }
+
+/* ここからIllustrators & Artistsページ */
+.image-grid-ai {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* 画像間のスペースを調整 */
+    padding-top: 1rem; /* 上部に余白を追加 */
+    padding-bottom: 1rem;
+}
+
+.square-image-ai {
+    width: calc(25% - 1rem); /* PC時の画像の幅を調整（gapに合わせて調整） */
+    height: auto; /* 画像の縦横比を保つ */
+}
+
+@media (max-width: 768px) { /* 768px以下のデバイス（スマホ）向けのスタイル */
+    .square-image-ai {
+        width: calc(50% - 0.5rem); /* スマホ時の画像の幅を調整 */
+    }
+}
+
+.img-radius {
+    border-radius: 16px;
+}

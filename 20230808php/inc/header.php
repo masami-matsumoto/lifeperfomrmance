@@ -8,6 +8,7 @@
             <li class="nav-item"><a class="nav-link" href="<?php echo $path; ?>about.php">About</a></li>
             <li class="nav-item"><a class="nav-link" href="<?php echo $path; ?>project.php">Project</a></li>
             <li class="nav-item"><a class="nav-link" href="<?php echo $path; ?>works.php">Works</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo $path; ?>artists.php">Artists</a></li>
           </ul>
           <div class="d-sm-none p-3 mt-n3"><a class="btn btn-primary w-100 mb-1 rounded-0" href="<?php echo $path; ?>contact.php" rel="noopener"><i class="ai-mail fs-xl me-2 ms-n1"></i>CONTACT</a></div>
         </nav>

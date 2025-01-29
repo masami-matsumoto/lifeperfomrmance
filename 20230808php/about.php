@@ -41,11 +41,19 @@ include 'inc/head.php'; // head.php の読み込み
     <h2 class="display-5 text-left pt-2 pt-sm-3 pt-md-4 pt-lg-5 pb-lg-3 mt-xxl-2 mb-0">Concept</h2>
     <div class="row justify-content-center pt-xxl-2">
       <div class="col-lg-9 col-xl-8">
-        <p class="fs-lg">"Design For Better Performance"は、WEBデザインとパフォーマンスの融合に重点を置いたコンセプトです。このコンセプトでは、以下のポイントに焦点を当てて活かしていきたいと考えております。</p>
-        <p class="fs-lg mb-3"><span class="text_bold">最適なユーザーエクスペリエンス: </span>訪れる方々のニーズに応じたデザインを提供し、素晴らしいユーザー体験を実現します。清潔で直感的なインターフェース、スムーズなナビゲーション、そして迅速な読み込み時間を通じて、ユーザーがウェブサイトを気軽に利用できる環境を提供します。</p>
-        <p class="fs-lg mb-3"><span class="text_bold">パフォーマンスと速度: </span>最新の技術や最適化手法を活用して、ページの読み込み時間を最小限に抑えます。これにより快適なユーザー体験を保証するとともに、SEOにも良い影響を与え、検索エンジンの順位向上に貢献します。</p>
-        <p class="fs-lg mb-3"><span class="text_bold">レスポンシブデザイン: </span>現代のウェブユーザーはさまざまなデバイスを使用してコンテンツにアクセスします。私たちのデザインは、デスクトップからモバイルまで、異なる画面サイズや解像度に柔軟に対応できるよう工夫されています。</p>
-        <p class="fs-lg mb-3"><span class="text_bold">セキュリティと安定性: </span>ウェブサイトのセキュリティと安定性を強化し、ユーザーのプライバシーと信頼性を確保します。セキュリティ上の懸念はユーザーを離れさせる可能性があるため、信頼性の高いWEBサイト構築を念頭に置いてご提供いたします。</p>
+      <div class="content-container-lpimg">
+      <img src="assets/img/top/president.png" alt="説明画像" class="right-image">
+        <p class="fs-lg"><span class="text_bold">"Design For Better Performance"</span>は、WEBデザインとサイトの動きやすさを融合させたコンセプトです。このコンセプトでは、以下の4つのサービスを通じて、目的に沿った価値あるWEBサイトを提供します。</p>
+        <p class="fs-lg mb-3"><span class="text_bold">WEBサイトデザイン・制作: </span>私たちは、単に見た目が良いだけでなく、目的に沿ったWEBサイトを作成します。会社の情報を発信するコーポレートサイトや、商品の販売を行うECサイトなど、お客様のニーズに合わせたサイトを提供します。</p>
+        </div>
+        <p class="fs-lg mb-3"><span class="text_bold">商品ブランディング: </span>商品コンセプトとデザインの開発を通じて、ブランドイメージの向上をお手伝いします。商品の魅力を最大限に引き出し、ユーザーに強く印象付けるデザインを提供します。</p>
+        <p class="fs-lg mb-3"><span class="text_bold">ECサイト販売支援事業: </span>自社ECサイト「LPSTORE」や他のECサイトでの販売をサポートします。商品の効果的な販売戦略を立て、売上を向上させるための支援を行います。</p>
+        <p class="fs-lg mb-3"><span class="text_bold">WEBサイト運用・集客: </span>WEBサイトの開発だけで終わらず、運用や集客、アフターサポートも行います。お客様のWEBサイトが常に最新の情報を提供できるよう、しっかりとサポートします。</p>
+        <p class="fs-lg"><span class="text_bold">サービスの特徴</span></p>
+        <p class="fs-lg mb-3"><span class="text_bold">最適なユーザーエクスペリエンス: </span>訪れる方々のニーズに応じたデザインを提供し、素晴らしいユーザー体験を実現します。分かりやすく使いやすいインターフェース、スムーズなナビゲーション、そして迅速な読み込み時間を通じて、ユーザーがウェブサイトを気軽に利用できる環境を提供します。</p>
+        <p class="fs-lg mb-3"><span class="text_bold">パフォーマンスと速度: </span>最新の技術や最適化手法を活用して、ページの読み込み時間を最小限に抑えます。これにより、ユーザーが快適にサイトを利用でき、検索エンジンの順位向上にも繋がります。</p>
+        <p class="fs-lg mb-3"><span class="text_bold">レスポンシブデザイン: </span>現代のウェブユーザーはさまざまなデバイスを使用してコンテンツにアクセスします。私たちのデザインは、パソコン、スマートフォン、タブレットなど、どのデバイスでも美しく見えるように工夫されています。</p>
+        <p class="fs-lg mb-3"><span class="text_bold">セキュリティと安定性: </span>ウェブサイトのセキュリティと安定性を強化し、ユーザーのプライバシーと信頼性を確保します。サイトが安全で信頼できるものであることを重視し、ユーザーが安心して利用できる環境を提供します。</p>
         <p class="fs-lg mb-3">このコンセプトのもとで、我々はデザインとパフォーマンスのバランスを取りながら、より優れたウェブサイトを創造し、ユーザー
           にとって価値あるオンライン体験をご提供いたします。</p>
       </div>
@@ -69,7 +77,9 @@ include 'inc/head.php'; // head.php の読み込み
         <dt class="h4 mb-lg-4 pt-3 pt-md-4 pt-xl-5">会員</dt>
         <dd class="fs-lg">フリーランス協会</dd>
         <dt class="h4 mb-lg-4 pt-3 pt-md-4 pt-xl-5">パートナー</dt>
-        <dd class="fs-lg">GMO MakeShop  Shopify partners</dd>
+        <dd class="fs-lg"><img src="assets/img/top/ec_logo.png" alt="ECサイト" class="eclogo-image"></dd>
+        <dt class="h4 mb-lg-4 pt-3 pt-md-4 pt-xl-5">イラストレーター&アーティスト</dt>
+        <dd class="fs-lg"><a href="artists.php">みやもとさぶろう</a></dd>
       </dl>
     </div>
   </section>
@@ -94,7 +104,7 @@ include 'inc/head.php'; // head.php の読み込み
           WordPress / ECCUBE </dd>
         <dt class="h4 mb-lg-4 pt-3 pt-md-4 pt-xl-5">開発環境</dt>
         <dd class="fs-lg">デザイン<br>
-          illustrator / Photoshop / XD / Premiere Pro / After Effect<br>
+          Figma / illustrator / Photoshop / XD / Premiere Pro / After Effect<br>
           エディタ<br>
           Visual Studio Code / Vim / Dreamweaver / cloud９<br>
           バージョン管理<br>
